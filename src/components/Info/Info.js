@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Info.module.scss';
-import photo from './../../assets/img/photo.png';
 
 const Info = (props) => {
     return (
@@ -11,7 +10,7 @@ const Info = (props) => {
                 <span>frontend разработчик</span>
             </div>
             <div className={style.photo}>
-                <img src={photo} alt='' />
+                <img src={''} alt='' />
             </div>
         </div>
     );
