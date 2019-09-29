@@ -1,0 +1,29 @@
+@import '../../css/variables.scss';
+@import '../../css/colors.scss';
+
+.pageTitle {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    font-size: 1.3em;
+    line-height: 1em;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 110%;
+
+        width: 50px;
+        height: 2px;
+
+        background-color: $effectsColor;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .pageTitle {
+        top: 20px;
+    }
+}

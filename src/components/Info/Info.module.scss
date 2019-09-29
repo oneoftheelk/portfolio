@@ -1,0 +1,77 @@
+@import '../../css/colors.scss';
+@import '../../css/variables.scss';
+
+.infoContainer {
+    position: relative;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background-color: $primaryBackgroundColor;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.8em;
+
+    h1 {
+        font-size: 1.4em;
+        font-weight: normal;
+
+        margin: 0;
+    }
+}
+
+.name {
+    position: relative;
+    z-index: 0;
+
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        bottom: 9px;
+
+        width: 100%;
+        height: 6px;
+
+        background-color: $effectsColor;
+    }
+}
+
+.photo {
+    position: relative;
+
+    width: 250px;
+    height: 250px;
+
+    border: 10px solid #fff;
+    border-radius: 50%;
+
+    transition: 1s;
+
+    img {
+        position: absolute;
+        top: -25%;
+        left: -10%;
+
+        width: 130%;
+        height: 130%;
+    }
+
+    &:hover {
+        border-color: $effectsColor;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .infoContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

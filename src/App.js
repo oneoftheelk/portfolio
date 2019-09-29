@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Link, animateScroll as scroll } from "react-scroll";
+import style from './App.module.scss';
+import Header from './components/Header/Header';
+import Info from './components/Info/Info';
+import Experience from './components/Experience/Experience';
+import Footer from './components/Footer/Footer';
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills';
+import toTopIcon from './assets/img/to-top.png';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div className={style.app}>
+            <div className={style.container}>
+                <Header />
+                <Info />
+                <Experience />
+                <Skills />
+                <Projects />
+                <Footer />
+            </div>
+            <img onClick={ () => scroll.scrollToTop() }
+                className={style.top} src={toTopIcon} alt={'back to top'}>
+            </img>
+        </div>
+    );
 }
 
 export default App;

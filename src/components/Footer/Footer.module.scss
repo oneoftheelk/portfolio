@@ -1,0 +1,44 @@
+@import '../../css/colors.scss';
+
+.footer {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 30vh;
+
+    background-color: $primaryBackgroundColor;
+}
+
+.contactLinks {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 100px 0 30px;
+
+    font-size: 0.8em;
+    
+    img {
+        width: 50px;
+
+        margin: 10px;
+
+        border-radius: 50%;
+
+        transition: 0.5s;
+
+        &:hover {
+            border: 2px solid $effectsColor;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .contactLinks {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
