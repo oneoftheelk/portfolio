@@ -15,7 +15,7 @@ const Footer = () => {
                 <a href={'https://github.com/oneoftheelk'} className={style.link} target='_blank' rel='noopener noreferrer'>
                     <img src={githubIcon} alt={'github'} />
                 </a>
-                <a href={'mailto:RamanTamilin@gmail.com'} className={style.link} target='_blank' rel='noopener noreferrer'>
+                <a href={'mailto:ramantamilin@gmail.com'} className={style.link} target='_blank' rel='noopener noreferrer'>
                     <img src={gmailIcon} alt={'gmail'} />
                 </a>
                 <a href={'https://t.me/RamanTamilin'} className={style.link} target='_blank' rel='noopener noreferrer'>
