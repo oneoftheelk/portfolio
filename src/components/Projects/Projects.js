@@ -11,13 +11,13 @@ import socialNetwork from './../../assets/img/projects/social-network.jpg';
 const Projects = () => {
     let projects = [
         {id: 1, picture: tournamentTable, title: 'Турнирная таблица', link: 'https://github.com/oneoftheelk/tournament-table',
-        description: 'Турнирная таблица'},
+        description: 'Турнирная таблица. Возможность добавлять и искать игроков, формировать таблицу исходя из рейтинга выбранных игроков. Внесение результатов и изменение рейтинга игроков после окончания турнира.'},
         {id: 2, picture: portfolio, title: 'Портфолио', link: 'https://github.com/oneoftheelk/portfolio',
-        description: 'Портфолио'},
+        description: 'Это портфолио'},
         {id: 3, picture: counter, title: 'Счётчик', link: 'https://github.com/oneoftheelk/counter',
-        description: 'Счётчик'},
+        description: 'Простейший счётчик. Первое приложение, самостоятельно написанное с использованием React + Redux.'},
         {id: 4, picture: socialNetwork, title: 'Социальная сеть', link: 'https://github.com/oneoftheelk/social-network-react',
-        description: 'Социальная сеть'}
+        description: 'Учебное приложение по youtube-курсу "React JS - путь самурая".'}
     ]
 
     const projectsElements = projects.map( project => {

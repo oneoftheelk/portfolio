@@ -5,7 +5,6 @@
     position: relative;
     
     display: flex;
-    justify-content: space-around;
     align-items: center;
 
     min-height: 100vh;
@@ -16,6 +15,8 @@
 .greeting {
     display: flex;
     flex-direction: column;
+
+    margin-left: 30px;
 
     font-size: 1.8em;
 
@@ -45,33 +46,51 @@
 }
 
 .photo {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
 
-    width: 250px;
-    height: 250px;
-
-    border: 10px solid #fff;
-    border-radius: 50%;
-
-    transition: 1s;
-
-    img {
-        position: absolute;
-        top: -25%;
-        left: -10%;
-
-        width: 130%;
-        height: 130%;
-    }
+    height: 75vh;
+    width: auto;
 
     &:hover {
         border-color: $effectsColor;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
     .infoContainer {
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+    }
+
+    .greeting {
+        margin-top: 30px;
+    }
+
+    .photo {
+        height: 60vh;
+
+        right: 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .photo {
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .greeting {
+        font-size: 1.6em;
+
+        h1 {
+            font-size: 1.2em;
+        }
+    }
+
+    .photo {
+        height: 50vh;
     }
 }

@@ -15,8 +15,10 @@
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 700px) {
     .nav {
-        display: none;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
     }
 }
