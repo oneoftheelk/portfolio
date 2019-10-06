@@ -12,9 +12,9 @@ const Projects = () => {
     let projects = [
         {id: 1, picture: tournamentTable, title: 'Турнирная таблица', link: 'https://oneoftheelk.github.io/tournament-table/',
         description: 'Турнирная таблица'},
-        {id: 2, picture: portfolio, title: 'Портфолио', link: '#',
+        {id: 2, picture: portfolio, title: 'Портфолио', link: 'https://oneoftheelk.github.io/portfolio/',
         description: 'Портфолио'},
-        {id: 3, picture: counter, title: 'Счётчик', link: '#',
+        {id: 3, picture: counter, title: 'Счётчик', link: 'https://oneoftheelk.github.io/counter/',
         description: 'Счётчик'},
         {id: 4, picture: socialNetwork, title: 'Социальная сеть', link: 'https://oneoftheelk.github.io/social-network-react/',
         description: 'Социальная сеть'}
