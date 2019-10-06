@@ -1,20 +1,23 @@
 import React from 'react';
 import style from './Projects.module.scss';
 import Fade from 'react-reveal/Fade';
-import picture from '../../assets/img/temp.png';
-import linkIcon from '../../assets/img/temp-icon.png';
 import PageTitle from '../common/PageTitle';
+import linkIcon from '../../assets/img/temp-icon.png';
+import tournamentTable from './../../assets/img/projects/tournament-table.jpg';
+import portfolio from './../../assets/img/projects/portfolio.jpg';
+import counter from './../../assets/img/projects/counter.jpg';
+import socialNetwork from './../../assets/img/projects/social-network.jpg';
 
 const Projects = () => {
     let projects = [
-        {id: 1, picture: picture, title: 'Портфолио',
-        description: 'Какое-то портфолио, сделанное с помощью HTML и CSS. Какое-то портфолио, сделанное с помощью HTML и CSS.'},
-        {id: 2, picture: picture, title: 'Социальная сеть',
-        description: 'Какая-то учебная социальная сеть.'},
-        {id: 3, picture: picture, title: 'Счётчик',
-        description: 'Какой-то простейший счётчик.'},
-        {id: 4, picture: picture, title: 'Четвёртый',
-        description: 'Какой-то таинственный четвёртый проект.'}
+        {id: 1, picture: tournamentTable, title: 'Турнирная таблица', link: 'https://oneoftheelk.github.io/tournament-table/',
+        description: 'Турнирная таблица'},
+        {id: 2, picture: portfolio, title: 'Портфолио', link: '#',
+        description: 'Портфолио'},
+        {id: 3, picture: counter, title: 'Счётчик', link: '#',
+        description: 'Счётчик'},
+        {id: 4, picture: socialNetwork, title: 'Социальная сеть', link: 'https://oneoftheelk.github.io/social-network-react/',
+        description: 'Социальная сеть'}
     ]
 
     const projectsElements = projects.map( project => {
@@ -22,7 +25,8 @@ const Projects = () => {
             <Project key={project.id}
                 picture={project.picture}
                 title={project.title}
-                description={project.description} />
+                description={project.description}
+                link={project.link} />
         )
     })
     
@@ -42,7 +46,9 @@ const Project = (props) => {
             <div className={style.project}>
                 <div className={style.title}>
                     {props.title}
-                    <img src={linkIcon} alt={'github'} />
+                    <a href={props.link} className={style.link}>
+                        <img src={linkIcon} alt={'github'} />
+                    </a>
                 </div>
                 <img className={style.picture} src={props.picture} alt={props.title}></img>
                 <div className={style.description}>{props.description}</div>

@@ -17,17 +17,16 @@ const Experience = (props) => {
                     </div>
                     <div className={style.job}>
                         <div className={style.title}>Работа</div>
-                        <div>01.2013 - 10.2019</div>
+                        <div>01.2013 - по настоящее время</div>
                         <div>ГК "ПарфюмБытХим"</div>
                         <div>Диспетчер автоматизированной <br />системы управления складом</div>
-                        <div>Краткое описание</div>
-                        <div>Краткое описание</div>
-                        <div>Краткое описание</div>
-                        <div>Краткое описание</div>
+                        <div>• автоматизация складских процессов</div>
+                        <div>• настройка WMS</div>
+                        <div>• обучение новых сотрудников</div>
                     </div>
                     <div className={style.incubator}>
                         <div className={style.title}>Курсы</div>
-                        <div>07.2019 - 10.2019</div>
+                        <div>07.2019 - по настоящее время</div>
                         <div>it-incubator</div>
                         <div>React developer</div>
                     </div>

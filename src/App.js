@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import style from './App.module.scss';
 import Header from './components/Header/Header';
 import Info from './components/Info/Info';
