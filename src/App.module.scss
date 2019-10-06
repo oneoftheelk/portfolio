@@ -1,0 +1,48 @@
+@import './css/colors.scss';
+
+.app {
+    display: flex;
+    justify-content: center;
+
+    color: $textColor;
+
+    a {
+        color: $textColor;
+    }
+}
+
+.container {
+    width: 70%;
+
+    outline: 2px solid $primaryBackgroundColor;
+}
+
+.top {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+
+    width: 50px;
+    height: 50px;
+
+    outline: none;
+    border-radius: 50%;
+
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+
+    transition: .3s;
+
+    &:hover {
+        background: $effectsColor;
+
+        box-shadow: 0 10px 20px rgba(230, 110, 255, 0.4);
+        
+        transform: translateY(-5px);
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .container {
+        width: 100%;
+    }
+}
