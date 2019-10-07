@@ -11,9 +11,12 @@ import socialNetwork from './../../assets/img/projects/social-network.jpg';
 const Projects = () => {
     let projects = [
         {id: 1, picture: tournamentTable, title: 'Турнирная таблица', link: 'https://github.com/oneoftheelk/tournament-table',
-        description: 'Турнирная таблица. Возможность добавлять и искать игроков, формировать таблицу исходя из рейтинга выбранных игроков. Внесение результатов и изменение рейтинга игроков после окончания турнира.'},
+        description: 'Турнирная таблица. Возможность добавлять и искать игроков, формировать таблицу исходя из рейтинга выбранных игроков.\
+            Внесение результатов и изменение рейтинга игроков после окончания турнира.\
+            Акцент на использовании React + Redux, React-bootstrap, Redux-form.' 
+        },
         {id: 2, picture: portfolio, title: 'Портфолио', link: 'https://github.com/oneoftheelk/portfolio',
-        description: 'Это портфолио'},
+        description: 'Это портфолио. Акцент на вёрстке, адаптивности, использовании SCSS.'},
         {id: 3, picture: counter, title: 'Счётчик', link: 'https://github.com/oneoftheelk/counter',
         description: 'Простейший счётчик. Первое приложение, самостоятельно написанное с использованием React + Redux.'},
         {id: 4, picture: socialNetwork, title: 'Социальная сеть', link: 'https://github.com/oneoftheelk/social-network-react',

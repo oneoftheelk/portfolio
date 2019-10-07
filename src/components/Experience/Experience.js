@@ -12,7 +12,7 @@ const Experience = (props) => {
                     <div className={style.education}>
                         <div className={style.title}>Образование</div>
                         <div>09.2009 - 01.2013</div>
-                        <div>Колледж электроники</div>
+                        <div>Минский государственный колледж электроники</div>
                         <div>Техник-программист</div>
                     </div>
                     <div className={style.job}>
